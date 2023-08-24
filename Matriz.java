@@ -41,7 +41,7 @@ public class Matriz {
     public static boolean validarDimensiones(int FILA, int COLUMNA) {
         if (FILA > 0 && COLUMNA > 0) {
             return true;
-        } else {
+        }else{
             return false;
         }
 
