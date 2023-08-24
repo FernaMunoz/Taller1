@@ -39,11 +39,19 @@ public class Matriz {
     }
 
     public static boolean validarDimensiones(int FILA, int COLUMNA) {
-        if (FILA > 0 && COLUMNA > 0) {
-            return true;
-        }else{
-            return false;
-        }
+        return FILA > 0 && COLUMNA > 0;
 
+    }
+    //por falta de tiempo dejare como comentario el codigo para mostrar las filas
+    public static void mostrarFila(int [][] Matriz, int FILA){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingresa el número de la fila que deseas mostrar (0 a " + (FILA - 1) + "): ");
+        int filaselec = scanner.nextInt();
+        if (filaselec >= 0 && filaselec < FILA) {
+            mostrarFila(Matriz, filaselec);
+        } else {
+            System.out.println("Fila no válida.");
+        }
+        scanner.close();
     }
 }
