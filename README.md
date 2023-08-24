@@ -5,3 +5,5 @@ Despues agregar el metodo public static void main con su (String[] args), para a
 La matriz sera de 3 x 3 para que no sea mas complicado, por lo que el metodo mostrara la matriz con numeros enteros positivos donde esos 9 numeros seran de 0 a 9 
 Se mostraran las filas y las columnas dandoles las variables de la fila y columna
 La matriz mostrara en cada casilla un numero
+
+
