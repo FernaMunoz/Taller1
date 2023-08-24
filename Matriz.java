@@ -15,7 +15,7 @@ public class Matriz {
         boolean validardimensiones = validarDimensiones(FILA,COLUMNA);
 
         if (validardimensiones) {
-            System.out.println("Valido");
+            System.out.println("NValido");
         } else {
             System.out.println("Invalido");
         }
