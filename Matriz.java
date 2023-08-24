@@ -28,9 +28,9 @@ public class Matriz {
             System.out.println();
         }
 
-        boolean validardimensiones = validarDimensiones(FILA, COLUMNA);
+        boolean validarnumero = validarNumero(FILA, COLUMNA);
 
-        if (validardimensiones) {
+        if (validarnumero) {
             System.out.println("Numero Valido");
         } else {
             System.out.println("Numero Invalido");
@@ -38,8 +38,12 @@ public class Matriz {
 
     }
 
-    public static boolean validarDimensiones(int FILA, int COLUMNA) {
-        return FILA > 0 && COLUMNA > 0;
+    public static boolean validarNumero(int FILA, int COLUMNA) {
+        if (FILA > 0 && COLUMNA > 0) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
     //por falta de tiempo dejare como comentario el codigo para mostrar las filas
